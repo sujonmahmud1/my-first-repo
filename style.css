@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+ /* navigation bar start */
+
+.navigation{
+    background-color: rgb(53, 53, 219);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.navigation > div > h2{
+    margin-left: 50px;
+    
+}
+
+.web{
+    color: rgb(29, 247, 9);
+    font-size: 35px;
+}
+.navigation > ul{
+    display: flex;
+    margin-right: 50px;
+}
+
+.navigation > ul > li{
+    list-style: none;
+    /* margin: 0px 5px; */
+    padding: 15px 0px;
+    
+}
+.navigation > ul > li > a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    border-right: 1px solid white;
+    padding: 16px 20px;
+    transition: 0.4s;
+}
+
+.navigation > ul >li:first-child > a{
+    border-left: 1px solid white;
+}
+.navigation > ul > li:hover > a{
+    background-color:red
+}
+
+.navigation > ul > li:hover > .dropdown{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1)
+}
+.dropdown{
+        background-color: rgb(53, 53, 219);
+        text-align: center;
+        margin-top: 15px;
+        position: absolute;
+        width: 178px;
+        opacity: 0;
+        transition: 0.4s;
+        visibility: hidden;
+        transform: scaleY(0);
+        transform-origin: top;
+        box-shadow: 8px 8px 6px gray;
+}
+.dropdown > li {
+        list-style: none;
+        padding: 10px 0px;
+        border: 1px solid white;
+}
+
+.dropdown > li > a{
+        text-decoration: none;
+        color: white;
+        
+}
+
+.dropdown > li:hover{
+    background-color: red;
+}
+
+
+
+
+/* navigation bar end */
+
+/* hero area start here */
+.hero-area-parent{
+    width: 100%;
+    height: 94.5vh;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/pexels.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.hero-area-child{
+    padding-top: 100px;
+}
+.hero-area-child h1{
+    width: 500px;
+    padding: 25px;
+    margin: 20px auto;
+    background-color: rgba(0, 0, 255, 0.5);
+    color: white;
+    font-size: 30px;
+    border-radius: 10px;
+
+}
+.h-web{
+    color: rgb(29, 247, 9);
+}
+.hero-area-child h3{
+    font-size:25px ;
+}
+.hero-area-child h4{
+    font-size: 20px;
+}
+.hero-area-child > button{
+    padding: 10px;
+    margin-top: 60px;
+    background-color:rgb(4, 83, 77);
+    color: white;
+    border-radius: 10px;
+    border: 2px solid greenyellow;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.hero-area-child > button:hover{
+    background-color:rgb(60, 250, 2);
+}
+.hero-icon{
+    margin-top: 10px;
+}
+.hero-icon > a{
+    padding: 10px;
+}
+.hero-icon > a > i{
+    font-size: 35px;
+    /* color: aqua; */
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    padding: 10px;
+    transition: 0.5s;
+}
+#youtube{
+    color: red;
+}
+#facebook{
+    color: rgba(37, 37, 201, 0.877);
+}
+.hero-icon > a > i:hover{
+    background-color:gray;
+}
+  
+/* hero area end */
+
+/* main area */
+
+
+ /* section-1 */
+ 
+
+.first-parent-container{
+    width: 1000px;
+    margin: auto;
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+.first-child-container{
+    width: 300px;
+    text-align: center;
+    padding: 30px 10px;
+    box-shadow: 5px 5px 15px gray;
+    transition: 0.5s;
+}
+.first-child-container > i{
+    font-size: 50px;
+}
+.first-child-container > h2{
+    margin: 15px 0;
+}
+.first-child-container:hover{
+    background-color: aqua;
+}
+ /* section-1 end */
